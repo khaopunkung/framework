@@ -4,10 +4,7 @@ namespace Illuminate\Foundation\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Composer;
-use Illuminate\Support\Facades\Blade;
-use Illuminate\Support\HtmlString;
 use Symfony\Component\Console\Attribute\AsCommand;
-use Symfony\Component\Process\Process;
 
 #[AsCommand(name: 'about')]
 class AboutCommand extends Command
