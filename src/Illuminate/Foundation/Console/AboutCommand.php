@@ -104,10 +104,10 @@ class AboutCommand extends Command
     protected function gatherEnvironmentData()
     {
         static::add('Environment', [
-            'Laravel Version' => app()->version(),
+            'Laravel Version' => $this->laravel->version(),
             'PHP Version' => phpversion(),
             'Composer Version' => $this->composer->getVersion() ?? '<fg=yellow;options=bold>-</>',
-            'Environment' => app()->environment(),
+            'Environment' => $this->laravel->environment(),
             'App Debug' => config('app.debug') ? '<fg=yellow;options=bold>ENABLED</>' : 'DISABLED',
             'App Name' => config('app.name'),
             'App URL' => config('app.url'),
