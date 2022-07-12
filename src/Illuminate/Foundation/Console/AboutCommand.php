@@ -126,6 +126,7 @@ class AboutCommand extends Command
     {
         static::add('Drivers', array_filter([
             'Broadcasting' => config('broadcasting.default'),
+            'Cache' => config('cache.default'),
             'Database' => config('database.default'),
             'Mail' => config('mail.default'),
             'Octane' => config('octane.server'),
