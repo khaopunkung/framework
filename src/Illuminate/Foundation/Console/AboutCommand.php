@@ -32,7 +32,7 @@ class AboutCommand extends Command
      *
      * @var string
      */
-    protected $description = 'About your application\'s environment';
+    protected $description = 'About your application';
 
     /**
      * The Composer instance.
