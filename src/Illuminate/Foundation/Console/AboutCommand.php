@@ -113,6 +113,7 @@ class AboutCommand extends Command
             'App URL' => config('app.url'),
             'App Root' => $this->laravel->basePath(),
             'Web Root' => $this->laravel->make('path.public'),
+            'Maintenance Mode' => $this->laravel->isDownForMaintenance() ? '<fg=yellow;options=bold>YES</>' : 'NO',
         ]);
     }
 
